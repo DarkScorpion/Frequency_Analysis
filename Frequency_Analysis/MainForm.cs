@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace Frequency_Analysis
 {
-
 	public partial class MainForm : Form
 	{
 		public MainForm()
@@ -20,14 +19,14 @@ namespace Frequency_Analysis
 		{
 			string AnalyzedText = richTextBox1.Text;
             var x = from c in AnalyzedText
-                    group c by c into g
-                    let count = g.Count()
-                    orderby g.Key ascending
-                    select new
-                    {
-                        Value = g.Key,
-                        Count = count,
-                    };
+            	group c by c into g
+            	let count = g.Count()
+            	orderby g.Key ascending
+            	select new
+            	{
+            		Value = g.Key,
+            		Count = count,
+            	};
             richTextBox2.Clear();
             richTextBox2.Text = "символ:\t\tчастота\t\tпроцент    \n\r";
             foreach (var count in x)
