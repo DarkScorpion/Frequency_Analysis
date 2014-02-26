@@ -29,13 +29,13 @@ namespace Frequency_Analysis
                         Count = count,
                     };
             richTextBox2.Clear();
-            richTextBox2.Text = "символ:      частота      процент    \n\r";
+            richTextBox2.Text = "символ:\t\tчастота\t\tпроцент    \n\r";
             foreach (var count in x)
             {
                 double frequency = Convert.ToDouble(count.Count)/AnalyzedText.Length;
                 frequency = Math.Round(frequency,5);
-                richTextBox2.Text += "    " + count.Value + "                     " + 
-                	count.Count + "            " +frequency*100+"% \n\r";
+                richTextBox2.Text += "    " + count.Value + "\t\t     " + 
+                	count.Count + "\t\t " +frequency*100+"% \n\r";
             }
 		}
 	}

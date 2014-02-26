@@ -46,7 +46,7 @@ namespace Frequency_Analysis
 			// 
 			this.richTextBox1.Location = new System.Drawing.Point(12, 41);
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(250, 96);
+			this.richTextBox1.Size = new System.Drawing.Size(307, 96);
 			this.richTextBox1.TabIndex = 0;
 			this.richTextBox1.Text = "";
 			// 
@@ -54,13 +54,13 @@ namespace Frequency_Analysis
 			// 
 			this.richTextBox2.Location = new System.Drawing.Point(13, 143);
 			this.richTextBox2.Name = "richTextBox2";
-			this.richTextBox2.Size = new System.Drawing.Size(250, 96);
+			this.richTextBox2.Size = new System.Drawing.Size(306, 96);
 			this.richTextBox2.TabIndex = 1;
 			this.richTextBox2.Text = "";
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(90, 245);
+			this.button1.Location = new System.Drawing.Point(119, 245);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(107, 37);
 			this.button1.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace Frequency_Analysis
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(90, 2);
+			this.label1.Location = new System.Drawing.Point(119, 2);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(107, 36);
 			this.label1.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace Frequency_Analysis
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(283, 294);
+			this.ClientSize = new System.Drawing.Size(331, 294);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.richTextBox2);
