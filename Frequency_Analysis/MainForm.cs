@@ -1,4 +1,6 @@
-﻿using System;
+﻿//The MIT License
+//(с) 2014 Александр Смит (https://github.com/DarkScorpion)
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;

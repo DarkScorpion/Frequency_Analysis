@@ -1,0 +1,1 @@
+A simple program for frequency analysis of the text.
