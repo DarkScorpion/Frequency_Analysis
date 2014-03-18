@@ -31,7 +31,7 @@ namespace Frequency_Analysis
             		Count = count,
             	};
             richTextBox2.Clear();
-            richTextBox2.Text = "символ:\t\tчастота\t\tпроцент    \n";
+            richTextBox2.Text = "Cимвол:\t\tЧастота\t\tПроцент    \n";
             foreach (var count in symbolsMap)
             {
                 frequency = Convert.ToDouble(count.Count)/AnalyzedText.Length;
