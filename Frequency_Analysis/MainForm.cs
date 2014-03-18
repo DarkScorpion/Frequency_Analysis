@@ -1,10 +1,11 @@
 ﻿//The MIT License
 //(с) 2014 Александр Смит (https://github.com/DarkScorpion)
 using System;
-using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace Frequency_Analysis
 {
@@ -39,6 +40,16 @@ namespace Frequency_Analysis
                 richTextBox2.Text += "    " + count.Value + "\t\t     " + 
                 	count.Count + "\t\t " +frequency*100+"% \n";
             }
+		}
+		
+		void LoadFileButtonClick(object sender, EventArgs e)
+		{
+ 			if(openFileDialog1.ShowDialog() == DialogResult.OK)
+   			{
+  				StreamReader streamReader = new StreamReader(openFileDialog1.FileName);
+  				richTextBox1.Text = streamReader.ReadToEnd();
+  				streamReader.Close();
+   			}
 		}
 	}
 }
