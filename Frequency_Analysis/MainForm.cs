@@ -19,8 +19,9 @@ namespace Frequency_Analysis
 		
 		void Button1Click(object sender, EventArgs e)
 		{
+			double frequency;
 			string AnalyzedText = richTextBox1.Text;
-            var x = from c in AnalyzedText
+            var symbolsMap = from c in AnalyzedText
             	group c by c into g
             	let count = g.Count()
             	orderby g.Key ascending
@@ -30,13 +31,13 @@ namespace Frequency_Analysis
             		Count = count,
             	};
             richTextBox2.Clear();
-            richTextBox2.Text = "символ:\t\tчастота\t\tпроцент    \n\r";
-            foreach (var count in x)
+            richTextBox2.Text = "символ:\t\tчастота\t\tпроцент    \n";
+            foreach (var count in symbolsMap)
             {
-                double frequency = Convert.ToDouble(count.Count)/AnalyzedText.Length;
+                frequency = Convert.ToDouble(count.Count)/AnalyzedText.Length;
                 frequency = Math.Round(frequency,5);
                 richTextBox2.Text += "    " + count.Value + "\t\t     " + 
-                	count.Count + "\t\t " +frequency*100+"% \n\r";
+                	count.Count + "\t\t " +frequency*100+"% \n";
             }
 		}
 	}
