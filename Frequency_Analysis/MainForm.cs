@@ -25,7 +25,7 @@ namespace Frequency_Analysis
             var symbolsMap = from c in AnalyzedText
             	group c by c into g
             	let count = g.Count()
-            	orderby g.Key ascending
+            	orderby count descending
             	select new
             	{
             		Value = g.Key,
